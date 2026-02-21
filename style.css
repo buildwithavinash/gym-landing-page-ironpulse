@@ -144,7 +144,7 @@ section {
 }
 
 .section__heading {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: var(--color-black);
 }
 
@@ -164,7 +164,7 @@ section {
   margin-top: 16px;
   display: grid;
   gap: 12px;
-  height: 500px;
+  height: 300px;
   grid-template-areas:
     "feature1 feature1 feature2"
     "feature3 feature4 feature4";
@@ -218,8 +218,130 @@ section {
 
 .feature__title {
   color: var(--color-white);
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .feature__info {
+  font-size: 0.8rem;
   color: var(--color-whitesmoke);
 }
+
+
+/* services */
+
+.services__cards {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  padding: 12px;
+  border-radius: 12px;
+  /* background-color: #e6e5e5; */
+  border: 1px solid #e8e8e8;
+  text-align: center;
+}
+
+.card__img {
+  margin-bottom: 8px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.card__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* testimonial */
+
+.testimonial__container {
+  display: flex;
+   justify-content: center;
+  margin-top: 16px;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.testimonial__card {
+  flex: 1;
+  border: 1px solid #d7d5d5;
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+.review {
+  margin: 1rem 0;
+}
+
+.reviewer__name {
+  margin-top: auto;
+}
+
+
+/* pricing */
+
+.pricing__container {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.pricing__card {
+  border: 1px solid #b3b3b3;
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+
+}
+
+.pricing__card .title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.pricing__features {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  align-items: flex-start;
+  margin-bottom: 1.4rem;
+  gap: 12px;
+}
+
+.pricing__card .price {
+  margin-top: auto;
+  font-size: 1.4rem;
+}
+
+.pricing__cta {
+  margin-top: 32px;
+  border: 1px solid #b0b0b0;
+ 
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.pricing__cta .section__heading {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+
+}
+
