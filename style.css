@@ -541,6 +541,10 @@ footer ul {
     padding: 0 12px;
   }
 
+  .hero {
+    height: 70vh;
+  }
+
   .nav__logo .logo{
     font-size: 1.4rem;
   }
