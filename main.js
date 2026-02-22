@@ -14,3 +14,9 @@ hamburger.addEventListener("click", function(){
     }
     
 })
+
+document.querySelectorAll('*').forEach(el => {
+  if (el.scrollWidth > document.documentElement.clientWidth) {
+    console.log(el);
+  }
+});
